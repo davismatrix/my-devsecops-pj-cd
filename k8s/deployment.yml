@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-devsecops-pj-app
+  name: my-devsecops-pj-deploy
   labels:
-    app: my-devsecops-pj-app
+    app: my-devsecops-pj-deploy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: my-devsecops-pj-app
+      app: my-devsecops-pj-deploy
   template:
     metadata:
       labels:
-        app: my-devsecops-pj-app
+        app: my-devsecops-pj-deploy
     spec:
       containers:
         - name: my-devsecops-pj-app
